@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Java Selenium Framework" parallel="tests" verbose="1" thread-count="5">
+    <listeners>
+        <listener class-name="Utility.Listener"></listener>
+    </listeners>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="headless" value="true"></parameter>
+        <classes>
+            <class name="TestCases.TC1_Admin_Login"/>
+        </classes>
+    </test>
+</suite>
