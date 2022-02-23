@@ -24,6 +24,12 @@ public class HomePage extends Services {
     public void setPassWord(String passWord){
         driver.findElement(By.name("password")).sendKeys(passWord);
     }
+    public String getValidate(){
+        //System.out.println(driver.findElement(By.className("invalid-feedback")).getText());
+        String validateMessage = driver.findElement(By.className("invalid-feedback")).getText();
+        
+        return validateMessage;
+    }
     public AdminPage clickSubmit(){
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div/form/div[4]/div/button")).click();
         return new AdminPage(driver);

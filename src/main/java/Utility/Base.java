@@ -18,7 +18,7 @@ public class Base{
     @BeforeMethod
     public void BaseTest(String browser, Boolean headless) {
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "D:\\Chromedriver\\chromedriver.exe");
             if (headless == true) {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("headless");

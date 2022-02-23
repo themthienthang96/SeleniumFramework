@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SeleniumFramework-master" />
         <module name="Selenium Automation Framework" />
+        <module name="SeleniumAutomationFramework" />
       </profile>
     </annotationProcessing>
   </component>
